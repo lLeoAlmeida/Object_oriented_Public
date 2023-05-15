@@ -1,3 +1,4 @@
 # Resolução das Atividades relizadas em aula.
 
-Atividade  - Parque de Diversão
+Atividade 00 - Parque de Diversão
+Atividade 01 - Teste IMC
