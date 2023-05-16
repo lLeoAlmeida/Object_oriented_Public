@@ -40,34 +40,33 @@ void Paciente::CalcularIMC()
 }
 void Paciente::ClassificarIMC()
 {
-    double imc;
-    imc = Peso / (Altura * Altura);
-    if (imc <= 16.5)
+    
+    if (Peso / (Altura * Altura) <= 16.5)
     {
-        cout << "Paciente: " << Nome << " com o IMC de: " << imc << " esta classificado na categoria: Peso severamente abaixo do normal"<<endl;
+        cout << "Paciente: " << Nome << " com o IMC de: " << Peso / (Altura * Altura) << " esta classificado na categoria: Peso severamente abaixo do normal"<<endl;
     }
-    else if (imc <= 18.5 && imc > 16.5)
+    else if (Peso / (Altura * Altura) <= 18.5 && Peso / (Altura * Altura) > 16.5)
     {
-        cout << "Paciente: " << Nome << " com o IMC de: " << imc << " esta classificado na categoria: Peso abaixo do normal"<<endl;
+        cout << "Paciente: " << Nome << " com o IMC de: " << Peso / (Altura * Altura) << " esta classificado na categoria: Peso abaixo do normal"<<endl;
     }
-    else if (imc <= 24.99 && imc > 18.5)
+    else if (Peso / (Altura * Altura) <= 24.99 && Peso / (Altura * Altura) > 18.5)
     {
-        cout << "Paciente: " << Nome << " com o IMC de: " << imc << " esta classificado na categoria: Normal"<<endl;
+        cout << "Paciente: " << Nome << " com o IMC de: " << Peso / (Altura * Altura) << " esta classificado na categoria: Normal"<<endl;
     }
-    else if (imc <= 29.99 && imc > 24.99)
+    else if (Peso / (Altura * Altura) <= 29.99 && Peso / (Altura * Altura) > 24.99)
     {
-        cout << "Paciente: " << Nome << " com o IMC de: " << imc << " esta classificado na categoria: Pre-Obeso"<<endl;
+        cout << "Paciente: " << Nome << " com o IMC de: " << Peso / (Altura * Altura) << " esta classificado na categoria: Pre-Obeso"<<endl;
     }
-    else if (imc <= 34.99 && imc > 29.99)
+    else if (Peso / (Altura * Altura) <= 34.99 && Peso / (Altura * Altura) > 29.99)
     {
-        cout << "Paciente: " << Nome << " com o IMC de: " << imc << " esta classificado na categoria: Obesidade Classe I"<<endl;
+        cout << "Paciente: " << Nome << " com o IMC de: " << Peso / (Altura * Altura) << " esta classificado na categoria: Obesidade Classe I"<<endl;
     }
-    else if (imc <= 39.99 && imc > 34.99)
+    else if (Peso / (Altura * Altura) <= 39.99 && Peso / (Altura * Altura) > 34.99)
     {
-        cout << "Paciente: " << Nome << ", com o IMC de: " << imc << " esta classificado na categoria: Obesidade Classe II"<<endl;
+        cout << "Paciente: " << Nome << ", com o IMC de: " << Peso / (Altura * Altura) << " esta classificado na categoria: Obesidade Classe II"<<endl;
     }
-    else if (imc > 40)
+    else if (Peso / (Altura * Altura) > 40)
     {
-        cout << "Paciente: " << Nome << ", com o IMC de: " << imc << " esta classificado na categoria: Obesidade Classe III"<<endl;
+        cout << "Paciente: " << Nome << ", com o IMC de: " << Peso / (Altura * Altura) << " esta classificado na categoria: Obesidade Classe III"<<endl;
     }
 }
